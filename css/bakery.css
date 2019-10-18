@@ -3,6 +3,10 @@
     color: black;
 }
 
+#pagewidth {
+    width: 1500px;
+}
+
 /* header image */
 #imgone {
     float: left;
@@ -42,7 +46,6 @@ body {
     margin-left: 200px;
     margin-right: 200px;
     border: solid;
-    background-image: url("5.jpg");
 }
 
 .figcaption {

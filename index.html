@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html id="pagewidth">
   <head>
     <title>The Bakeria!</title>
     <link rel="stylesheet" type="text/css" href="css/bakery.css" />
+    <script src="js/bakery.js"></script>
   </head>
   <body>
 
@@ -10,8 +11,12 @@
       <!-- header image -->
       <img src="1.jpg" id="imgone" alt="Our bakery">
 
-      <!-- title -->
-      <h1 id="maintitle"> The Bakeria! </h1>
+      <!-- title + js dependent headings -->
+      <hgroup>
+        <h1 id="maintitle">The Bakeria!</h1>
+        <h2><script>document.write(getWelcome())</script></h2>
+        <h3><script>document.write(getTime() + firstName())</script></h3>
+      </hgroup>
 
       <!-- 1st nav bar, unordered list -->
       <nav>
@@ -48,9 +53,11 @@
     </main>
 
     <footer>
+      <!-- social media link -->
       <article id="social">
         <a href="">Social Media</a>
       </article>
+      <!-- address of bakery -->
       <article id="address">
         304 Negra Arroyo Lane, Seattle, WA 98105
       </article>
@@ -58,7 +65,6 @@
         <!-- footer nav bar -->
         <nav id="navtwo">
           <ul>
-            <!-- address should be a separate box from rest of list -->
             <li class="listtwo" ><a href="https://github.com/svakam">Vik's GitHub</a></li>
             <li class="listtwo" ><a href="https://github.com/vijayetar">Vij's GitHub</a></li>
             <li class="listtwo"><a href="">Contact us</a></li>
@@ -67,7 +73,7 @@
           </ul>
         </nav>
       </article>
-
+      <!-- copyright -->
       <article id="copyright">
         &copy; 2019
       </article>
