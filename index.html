@@ -3,19 +3,20 @@
   <head>
     <title>The Bakeria!</title>
     <link rel="stylesheet" type="text/css" href="css/bakery.css" />
-    <script src="js/bakery.js"></script>
   </head>
   <body>
-
+    
     <header>
+      <script src="js/bakery.js"></script>
       <!-- header image -->
       <img src="1.jpg" id="imgone" alt="Our bakery">
 
       <!-- title + js dependent headings -->
       <hgroup>
         <h1 id="maintitle">The Bakeria!</h1>
-        <h2><script>document.write(getWelcome())</script></h2>
-        <h3><script>document.write(getTime() + firstName())</script></h3>
+        <script>document.write(getWelcome())</script>
+        <h3><script>document.write(getTime())</script></h3>
+        <h3><script>document.write(firstName())</script></h3>
       </hgroup>
 
       <p><script>document.write(getReservation())</script></p>
