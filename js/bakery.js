@@ -6,12 +6,12 @@
 //if no or No, say welcome
 //if yes or Yes, say welcome back
 function getWelcome() {
-  var welcomeMessage;
+  var welcomeMessage = '';
   welcomeMessage = prompt('Have you visited our website before?');
-  if (welcomeMessage == 'no' || 'No') {
+  if (welcomeMessage === 'no' || 'No') {
     return 'Welcome!';
   }
-  else if (welcomeMessage == 'yes' || 'Yes') {
+  else if (welcomeMessage === 'yes' || 'Yes') {
     return 'Welcome back!';
   }
   else
@@ -63,8 +63,8 @@ function firstName() {
 //print "You have reserved a table for x people."
 //print person.jpg x times
 function getReservation() {
-  var people;
-  var reservation = prompt('Will you be making a reservation with us?');
+  var people = 0;
+  var reservation = '';
   while (isNaN(reservation)) {
     reservation = prompt('Will you be making a reservation with us?');
   }
@@ -72,9 +72,9 @@ function getReservation() {
     while (isNaN(people) {  
       people = prompt('How many?');
     }
-    console.log('You have reserved a table for ' + people + '.');
+    alert('You have reserved a table for ' + people + '.');
     for (var i = 0; i < people; i++) {
-      console.log('<img src="person.jpg" alt="Person"></img>');
+      return('<img src="person.jpg">');
     }
   }
   }
