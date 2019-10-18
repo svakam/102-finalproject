@@ -5,51 +5,73 @@
     <link rel="stylesheet" type="text/css" href="css/bakery.css" />
   </head>
   <body>
+
     <header>
-      <img src="1.jpg" alt="Our bakery">
-      <h1> The Bakeria! </h1>
+      <!-- header image -->
+      <img src="1.jpg" id="imgone" alt="Our bakery">
+
+      <!-- title -->
+      <h1 id="maintitle"> The Bakeria! </h1>
+
+      <!-- 1st nav bar, unordered list -->
       <nav>
-        <ul>
-          <li><a href="">Welcome</a></li>
-          <li><a href="">Hours & location</a></li>
-          <li><a href="">In the news</a></li>
-          <li><a href="">Catering</a></li>
-          <li><a href="">Read our reviews</a></li>
+        <ul id="navone">
+          <li class="listone"><a href="">Welcome</a></li>
+          <li class="listone"><a href="">Hours & location</a></li>
+          <li class="listone"><a href="">In the news</a></li>
+          <li class="listone"><a href="">Catering</a></li>
+          <li class="listone"><a href="">Read our reviews</a></li>
       </nav>
     </header>
+
     <main>
+      <!-- background image -->
+      <img id="backgroundimg" src="5.jpg" alt="Background image">
+
+      <!-- intro message -->
       <h1>Welcome to The Bakeria - Seattle's newest and best comfort food cafe!</h1>
-      <h2>Hover your cursor over our most popular products below to learn more.</h2>
-      <figure>
-        <a href=""><img src="2.jpg" alt="Birthday cakes"></a>
-        <figcaption href="">Take a look at our cake specialties, and order here.</figcaption>
+      <h2 id="description">Click on our most popular products below to learn more.</h2>
+
+      <!-- clickable images with descriptions on what to do -->
+      <article class="leftalign">
+        <a href=""><img class="images" src="2.jpg" alt="Birthday cakes"></a>
+        <p id="fig1" class="figcaption" href="">Take a look at our cake specialties, and order here.</p>
       </figure>
-      <figure>
-        <a href=""><img src="3.jpg" alt="Wedding cakes"></a>
-        <figcaption href="">We offer the best wedding cakes in the Puget Sound area!</figcaption>
+      <article class="rightalign">
+        <a href=""><img class="images" src="3.jpg" alt="Wedding cakes"></a>
+        <p id="fig2" class="figcaption" href="">We offer the best wedding cakes in the Puget Sound area!</p>
       </figure>
-      <figure>
-        <a href=""><img src="4.jpg" alt="Cooking classes"></a>
-        <figcaption href="">We also offer cooking classes - deals every week.</figcaption>
+      <article class="leftalign">
+        <a href=""><img class="images" src="4.jpg" alt="Cooking classes"></a>
+        <p id="fig3" class="figcaption" href="">We also offer cooking classes - deals every week.</p>
       </figure>
     </main>
+
     <footer>
-      <article>
-        <ul>
-          <li>555 Negro Arroya Lane, Seattle, WA, 98105</li>
-          <li><a href="">Vik's GitHub</a></li>
-          <li><a href="">Vij's GitHub</a></li>
-          <li><a href="">Contact us</a></li>
-          <li><a href="">Gift cards</a></li>
-          <li><a href="">About</a></li>
-        </ul>
+      <article id="social">
+        <a href="">Social Media</a>
+      </article>
+      <article id="address">
+        304 Negra Arroyo Lane, Seattle, WA 98105
       </article>
       <article>
-        <li><a href="">Social media</a></li>
+        <!-- footer nav bar -->
+        <nav id="navtwo">
+          <ul>
+            <!-- address should be a separate box from rest of list -->
+            <li class="listtwo" ><a href="https://github.com/svakam">Vik's GitHub</a></li>
+            <li class="listtwo" ><a href="https://github.com/vijayetar">Vij's GitHub</a></li>
+            <li class="listtwo"><a href="">Contact us</a></li>
+            <li class="listtwo"><a href="">Gift cards</a></li>
+            <li class="listtwo"><a href="">About</a></li>
+          </ul>
+        </nav>
       </article>
-      <article>
-        <a href="">Copyright 2019</a>
+
+      <article id="copyright">
+        &copy; 2019
       </article>
     </footer>
+
   </body>
 </html>

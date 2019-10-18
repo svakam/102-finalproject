@@ -1,0 +1,111 @@
+* {
+    background-color: lightskyblue;
+    color: black;
+}
+
+/* header image */
+#imgone {
+    float: left;
+    width: 250px;
+}
+
+/* title */
+#maintitle {
+    font-size: 120px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* 1st nav bar, unordered list */
+#navone {
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.listone {
+    display: inline;
+    margin: 42px;
+    text-transform: uppercase;
+    background-color: lightcoral;
+}
+
+/* images */
+.images {
+    width: 350px;
+    position: relative;
+    right: 250px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: solid;
+    background-image: url("5.jpg");
+}
+
+.figcaption {
+    float: left;
+    font-style: bold;
+    text-align: center;
+}
+
+#fig1 {
+    position: relative;
+    left: 650px;
+    bottom: -65px;
+    width: 250px;
+    font-size: 24pt;
+}
+
+#fig2 {
+    position: relative;
+    left: 650px;
+    bottom: -140px;
+    width: 250px;
+    font-size: 24pt;
+}
+
+#fig3 {
+    position: relative;
+    left: 650px;
+    bottom: 0px;
+    width: 250px;
+    font-size: 24pt;
+}
+
+#address {
+    width: 160px;
+    position: relative;
+    top: 60px;
+    left: 50px;
+    text-align: center;
+}
+
+#navtwo {
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    left: 270px;
+    bottom: 40px;
+    width: 800px;
+}
+
+.listtwo {
+    display: inline;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+#social {
+    position: relative;
+    top: 30px;
+    left: 79px;
+    width: 100px;
+}
+
+#copyright {
+    text-align: center;
+}
