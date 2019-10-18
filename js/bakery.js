@@ -7,13 +7,11 @@
 //if yes or Yes, say welcome back
 function getWelcome() {
   var welcomeMessage;
-  while (welcomeMessage !== 'no' || 'No' || 'yes' || 'Yes') {
-    welcomeMessage = prompt('Have you visited our website before?');
-  }
-  if (welcomeMessage === 'no' || 'No') {
+  welcomeMessage = prompt('Have you visited our website before?');
+  if (welcomeMessage == 'no' || 'No') {
     return 'Welcome!';
   }
-  else if (welcomeMessage === 'yes' || 'Yes') {
+  else if (welcomeMessage == 'yes' || 'Yes') {
     return 'Welcome back!';
   }
   else
@@ -48,7 +46,7 @@ function getTime() {
 //concatenate "Welcome," to name
 function firstName() {
   var name = prompt('What is your first name?');
-  if ((name === '' || name !== null)) { //if message is a string or not null
+  if (name === '' || name !== null) { //if message is a string or not null
     return name;
   }
   else if (name === null) { //else if message is null
@@ -67,13 +65,16 @@ function firstName() {
 function getReservation() {
   var people;
   var reservation = prompt('Will you be making a reservation with us?');
+  while (isNaN(reservation)) {
+    reservation = prompt('Will you be making a reservation with us?');
+  }
   if (reservation == 'yes' || 'Yes') {
-    while (isNaN(people) {
-    people = prompt('How many?');
-    }
-    for (var i = 1; i < people; i++) {
-      console.log(<img src="person.jpg" alt="Person"></img>);
+    while (isNaN(people) {  
+      people = prompt('How many?');
     }
     console.log('You have reserved a table for ' + people + '.');
+    for (var i = 0; i < people; i++) {
+      console.log('<img src="person.jpg" alt="Person"></img>');
+    }
   }
-}
+  }
