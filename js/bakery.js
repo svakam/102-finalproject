@@ -6,7 +6,10 @@
 //if no or No, say welcome
 //if yes or Yes, say welcome back
 function getWelcome() {
-  var welcomeMessage = prompt('Have you visited our website before?');
+  var welcomeMessage;
+  while (welcomeMessage !== 'no' || 'No' || 'yes' || 'Yes') {
+    welcomeMessage = prompt('Have you visited our website before?');
+  }
   if (welcomeMessage === 'no' || 'No') {
     return 'Welcome!';
   }
@@ -53,5 +56,24 @@ function firstName() {
   }
   else if (name === ' ') {
     return 'and feel free to explore our website!';
+  }
+}
+
+//get reservation:
+//ask if reservation needs to be made
+//if yes, ask how many people 1-8 will be coming
+//print "You have reserved a table for x people."
+//print person.jpg x times
+function getReservation() {
+  var people;
+  var reservation = prompt('Will you be making a reservation with us?');
+  if (reservation == 'yes' || 'Yes') {
+    while (isNaN(people) {
+    people = prompt('How many?');
+    }
+    for (var i = 1; i < people; i++) {
+      console.log(<img src="person.jpg" alt="Person"></img>);
+    }
+    console.log('You have reserved a table for ' + people + '.');
   }
 }
